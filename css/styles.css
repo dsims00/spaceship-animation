@@ -19,10 +19,12 @@ html, body {
 	right: 0;
 	margin-right: 100px;
 	z-index: 0;
+	
 }
 
 .aliens img {
 	position: relative;
 	width: 40px;
 	height: 48px;
+	display: none;
 }

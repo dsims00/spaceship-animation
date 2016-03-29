@@ -14,7 +14,13 @@ $(document).ready(function() {
 
     
     $(".rocket img").animate({marginTop: "350px"}, 5000, function() {
-    	$(".aliens img").remove(); 
+    	$("#alien1").show('slow', function() {
+    		$("#alien2").show('slow', function() {
+    			$("#alien3").show('slow', function() {
+    				$("#alien4").show('slow');
+    			})
+    		})
+    	}); 
     })
         
 });
