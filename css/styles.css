@@ -1,0 +1,27 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/nitesky.png);
+	background-size: cover;
+}
+
+.rocket img{
+	width: 256px;
+	height: 177px;
+	position: absolute;
+	top: 50px;
+	z-index: 1;
+}
+
+.aliens{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 100px;
+	z-index: 0;
+}
+
+.aliens img {
+	width: 40px;
+	height: 48px;
+}
