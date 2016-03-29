@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
     $(".rocket img").animate({left: "+=1000"}, 5000, function() {
-    // $(".rocket img").animate({left: "-=300"}, 1000, function() {
+    
 	    $(".rocket img").css({
 	    	 transform: ' rotateZ(-58deg)',
 			 MozTransform: ' rotateZ(-58deg)',
@@ -13,6 +13,8 @@ $(document).ready(function() {
     });
 
     
-    $(".rocket img").animate({marginTop: "+=450px"}, 5000)
-     
+    $(".rocket img").animate({marginTop: "350px"}, 5000, function() {
+    	$(".aliens img").remove(); 
+    })
+        
 });
