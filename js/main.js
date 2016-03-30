@@ -34,9 +34,9 @@ $(document).ready(function() {
                                             $('#alien1').delay(5000).fadeIn().animate({left: "1050px"}, 5000, function() {
                                                 $('#alien2').fadeIn().animate({left: "1050px"}, 5000, function() {
                                                     $('#alien3').fadeIn().animate({left: "1050px"}, 5000, function() {
-                                                        $('#alien4').fadeIn().animate({left: "1050px"}, 5000, function() {
+                                                        $('#alien4').fadeIn().animate({left: "1050px"}, 5000, tank);
 
-                                                        });
+                                                    
                                                     });
                                                 });
                                             });
@@ -50,6 +50,24 @@ $(document).ready(function() {
     		});
     	}); 
     });
+
+    function tank() {
+        $('#tank').show('slow', goTank)
+    };
+
+    function goTank() {
+        $("#tank").animate({width: "+=242px", height: "+=70px"}, 'fast');
+        $('#tank').animate({left: '700px'}, 6000, alienDisappear);  
+    };
+
+    function alienDisappear() {
+        $('.aliens').addClass('animated shake');   
+    };
+
+    function goToShip() {
+        $('.aliens').hide('slow');
+    };
+    
 
    
 
