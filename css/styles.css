@@ -16,10 +16,12 @@ html, body {
 .aliens{
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	right: 0px;
 	margin-right: 100px;
 	z-index: 0;
-	
+	/*text-align: left;*/
+	width: 180px;
+
 }
 
 .aliens img {
@@ -28,3 +30,17 @@ html, body {
 	height: 48px;
 	display: none;
 }
+
+.tank img {
+	position: fixed;
+	width: 121px;
+	height: 65px;
+	bottom: 0px;
+	display: none;
+	
+}
+
+/*.tank {
+	position: fixed;
+	bottom: 0px;
+}*/
