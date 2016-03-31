@@ -1,4 +1,4 @@
-html, body {
+html, body{
 	width: 100%;
 	height: 100%;
 	background-image: url(../images/nitesky.png);
@@ -24,14 +24,14 @@ html, body {
 
 }
 
-.aliens img {
+.aliens img{
 	position: relative;
 	width: 40px;
 	height: 48px;
 	display: none;
 }
 
-.tank img {
+.tank img{
 	position: fixed;
 	width: 121px;
 	height: 65px;
@@ -40,9 +40,33 @@ html, body {
 	
 }
 
-/*.tank {
-	position: fixed;
-	bottom: 0px;
-}*/
+.theEnd{
+	 position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	margin-top: -50px;
+  	margin-left: -100px;
+	z-index: 1;
+	color: white;
+	font-size: 2em;
+	display: none;
 
+}
+
+@media (max-width: 480px){
+	body {
+		width: 100%;
+		background-image: none;
+		
+	}
+
+	.rocket img{
+		width: 63px;
+		height: 42px;
+		position: fixed;
+		top: 50px;
+		z-index: 1;
+
+	}
+}
 
