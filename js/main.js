@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
     // rocket moves right
-    $(".rocket img").animate({left: "+=1000"}, 5000, function() {
+    $(".rocket img").animate({left: "+=1050px"}, 5000, function() {
         // rocket rotates
 	    $(".rocket img").css({
 	    	 transform: ' rotateZ(-58deg)',
@@ -14,7 +14,7 @@ $(document).ready(function() {
     });
 
     // Rocket lands
-    $(".rocket img").animate({marginTop: "350px"}, 5000, function() {
+    $(".rocket img").animate({marginTop: "+=350px"}, 5000, function() {
     //     for (var i = 0; i<4; i++) {
     //         $(".aliens img").eq(i).delay(5000 * i).show(5000);
     //     }
