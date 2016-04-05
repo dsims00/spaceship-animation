@@ -40,18 +40,7 @@ html, body{
 	
 }
 
-.theEnd{
-	 position: fixed;
-  	top: 50%;
-  	left: 50%;
-  	margin-top: -50px;
-  	margin-left: -100px;
-	z-index: 1;
-	color: white;
-	font-size: 2em;
-	display: none;
 
-}
 
 @media (max-width: 480px){
 	body {
@@ -66,7 +55,7 @@ html, body{
 		position: fixed;
 		top: 50px;
 		z-index: 1;
-
 	}
-}
+
+};
 
